@@ -1,0 +1,129 @@
+:root {
+    --navy-blue: #191637;
+    --light-grey: #F5F5F5;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: var(--light-grey);
+    color: var(--navy-blue);
+}
+
+header {
+    background-color: var(--navy-blue);
+    padding: 1rem;
+    color: var(--white);
+    text-align: center;
+}
+
+nav a {
+    color: var(--white);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.intro-section, .identity-section {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.intro-heading {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.intro-text, .identity-text {
+    line-height: 1.6;
+}
+
+.identity-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.identity-image-container {
+    width: 50%;
+    text-align: center;
+}
+
+.uniform-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Gallery Page Styles */
+.page-heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.page-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-caption {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .identity-content {
+        flex-direction: column;
+    }
+
+    .identity-image-container {
+        width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--navy-blue);
+    color: var(--white);
+    margin-top: 2rem;
+}
